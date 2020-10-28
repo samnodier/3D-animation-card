@@ -1,9 +1,9 @@
 ## 3D Animation Card
 
-[![Screenshot](./img/screenshot.JPG)](https://sam0132nodier.github.io/3D-animation-card)
+[![Screenshot](./img/screenshot.JPG)](https://sam0132nodier.github.io/3D-animation-card/)
 
 This is a card that animates itself when you move the cursor around it showing you every corner of it.
-
+Click [https://sam0132nodier.github.io/3D-animation-card/](https://sam0132nodier.github.io/3D-animation-card/) to view the demo of the project.
 ## Project specifications
 
 - Create and style the card using __HTML and CSS__
