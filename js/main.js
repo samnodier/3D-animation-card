@@ -19,8 +19,11 @@ container.addEventListener('mousemove', (e) => {
 container.addEventListener('mouseenter', e => {
 	// Remove transition
 	card.style.transition = 'none';
-	laptop.style.transform = 'translateZ(200px) rotateZ(-45deg)';
-	h1.style.transform = "translateZ(150px)";
+	laptop.style.transform = 'perspective(1000px) translateZ(200px) rotateZ(-20deg) rotateY(20deg)';
+	h1.style.transform = 'perspective(1000px) translateZ(150px)';
+	h3.style.transform = 'perspective(1000px) translateZ(150px)';
+	prices.style.transform = 'perspective(1000px) translateZ(100px)';
+	purchase.style.transform = 'perspective(1000px) translateZ(100px)';
 })
 
 // Remove the rotation when the mouse leaves the container
@@ -28,6 +31,9 @@ container.addEventListener('mouseleave', e => {
 	// Reset the rotation
 	card.style.transition = 'all .5s ease';
 	card.style.transform = 'rotateX(0deg) rotateY(0deg)';
-	laptop.style.transform = 'translateZ(0px) rotateZ(0)';
-	h1.style.transform = "translateZ(0px)";
+	laptop.style.transform = 'translateZ(0) rotateZ(0)';
+	h1.style.transform = 'translateZ(0)';
+	h3.style.transform = 'translateZ(0)';
+	prices.style.transform = 'translateZ(0)';
+	purchase.style.transform = 'translateZ(0)';
 })
