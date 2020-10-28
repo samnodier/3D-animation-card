@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 26rem;
+	min-height: 40rem;
+	box-shadow: 0 20px 20px rgba(0,0,0,.2), 0 0 10px rgba(0,0,0,.2);
+	border-radius: 20px;
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.card__laptop {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10rem;
+	margin-bottom: 3.5rem;
+	transition: all .7s ease-out;
+}
+
+.background-circle {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(#bababa, #f1f1f1);
+    z-index: 1;
+    box-shadow: 0 0 20px #bababa;
+}
+
+.card__laptop img {
+	width: 18rem;
+	z-index: 2;
+	transition: all .7s ease-out;
+}
+
+.card__info {
+	margin-bottom: 4rem;
+}
+
+.card__info h1 {
+	margin-bottom: 3.5rem;
+	transition: all .7s ease-out;
+}
+
+.card__info h3 {
+	margin-bottom: 1.5rem;
+	transition: all .7s ease-out;
+}
+
+.card__prices {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all .7s ease-out;
+}
+
+.card__prices button {
+	padding: .7rem 1.1rem;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	border-radius: 250px;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+button.active {
+	background: rgb(202, 49, 162);
+	color: #FFFFFF;
+}
+
+.card__purchase button {
+	width: 100%;
+	background: rgb(202, 49, 162);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	border-radius: 250px;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: all .7s ease-out;
+}
